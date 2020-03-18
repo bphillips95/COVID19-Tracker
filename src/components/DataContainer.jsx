@@ -3,19 +3,12 @@ import CityData from './CityData'
 const DataContainer = (props) => { 
 
     return(
-    <div>
-    <h2>
-    Covid 19 Tracker with Tweets
-    </h2> 
+      <div>
+     <img src={`https://maps.googleapis.com/maps/api/staticmap?center=USA&size=600x300
+      &key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}`} alt=''></img>
+    
       Last Updated {props?.data?.lastChecked}
       {props?.data?.covid19Stats?.map(state => <CityData state={state} /> )}
-      
-      {/* <div>{state.province}<br/>
-   Number of Sick: {state.confirmed}<br/>
-   Number of Deaths: {state.deaths} <br/>
-   Number recovered: {state.recovered}
-   </div>
-      )} /> */}
    </div>
     )}
 

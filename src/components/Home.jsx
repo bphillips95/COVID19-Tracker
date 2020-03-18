@@ -14,14 +14,14 @@ const Home = () => {
           }
         )
         setData(result.data.data)
-        // props.type.saveDataToState(result.data)
-        console.log(result.data.data)
-  
       }
       fetchData()
     },[])
     return(
+        <React.Fragment>
+        <h2> Covid 19 Tracker with Tweets</h2> 
         <DataContainer data={data}/>
+        </React.Fragment>
     )
 }
 export default Home
