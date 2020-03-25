@@ -1,6 +1,8 @@
 # COVID19 TRACKER
 
-Basic Coronavirus tracker.
+Coronavirus tracker using Google Maps API. 
+
+Click on state to see the COVID19 info from that state. The data is being taken from the John Hopkins Coronavirus Resource Center. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
