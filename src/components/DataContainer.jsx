@@ -11,7 +11,10 @@ const DataContainer = (props) => {
   const onMapClick = (ref, map, e) => {
     setMarkerShown(true)
     setmarkerPosition(e.latLng)
-    console.log(e)
+      // console.log(e, "e")
+    // console.log(ref, "ref")
+    // console.log(map, "Map")
+    // fetch("http://api.geonames.org/findNearestAddressJSON?lat=37.451&lng=-122.18&username=demo")
   }
 
   const onMarkerClick = (props, marker, e) => {
